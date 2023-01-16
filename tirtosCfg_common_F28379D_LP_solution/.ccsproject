@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVersion value="11.2.0"/>
+	<deviceVariant value="TMS320C28XX.TMS320F28379D"/>
+	<deviceFamily value="C2000"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="21.6.0.LTS"/>
+	<isElfFormat value="true"/>
+	<createSlaveProjects value=""/>
+	<ignoreDefaultDeviceSettings value="true"/>
+	<ignoreDefaultCCSSettings value="true"/>
+	<templateProperties value="id=tirtosCfg_common_solution.projectspec.tirtosCfg_common_F28379D_LP_solution,products=com.ti.rtsc.SYSBIOS:6.83.00.18;com.ti.uia:2.30.01.02,xdcToolsVersion=3.61.999,target=ti.targets.elf.C28_float,platform=ti.platforms.tms320x28:TMS320F28379D,buildProfile=release"/>
+	<origin value="D:\tirtos_workshop\F28379D_LP\tirtosCfg_common_solution\tirtosCfg_common_solution.projectspec"/>
+	<filesToOpen value=""/>
+</projectOptions>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="xconfig_release" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/release_pe28FP.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="D:/C2000/tirtosCfg_common_F28379D_LP_solution/release.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/release_pe28FP.mak" src="package.bld"/>
+        <srcFile name="package/cfg/release_pe28FP.oe28FP.dep" src="package/cfg/release_pe28FP.c"/>
+        <srcFile name="package/cfg/release_pe28FP.dep" src="package/cfg/release_pe28FP.cfg"/>
+        <srcFile name="package/cfg/release.xe28FP.mak" src="package.bld"/>
+        <srcFile name="package/rel/xconfig_release.tar.dep" src="package/rel/xconfig_release.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.elf.C28_float"
+            version="ti.targets.elf.C28_float{1,0,21.6,0"
+            rawVersion="21.6.0"
+            platform="ti.platforms.sim28xx"
+            isa="28FP"
+            suffix="e28FP"
+            rootDir="C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-c2000_21.6.0.LTS"
+            os="undefined"
+            rts="ti.targets.rts2800">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="large"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="release"
+        pname="release.pe28FP"
+        target="ti.targets.elf.C28_float"
+        platform="ti.platforms.tms320x28:TMS320F28379D"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/release_pe28FP.cfg"
+        xCfgPrefix="package/cfg/release_pe28FP"
+        cfgScript="D:/C2000/tirtosCfg_common_F28379D_LP_solution/release.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="release"
+        pname="release.xe28FP"
+        target="ti.targets.elf.C28_float"
+        platform="ti.platforms.tms320x28:TMS320F28379D"
+        profile="release"
+        xCfgScript="package/cfg/release_pe28FP.cfg"
+        xCfgPrefix="package/cfg/release_pe28FP"
+        cfgScript="D:/C2000/tirtosCfg_common_F28379D_LP_solution/release.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="release.xe28FP"
+        args=""
+        groupName="release.xe28FP"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="xconfig_release"
+        pname="xconfig_release.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>
